@@ -3,45 +3,21 @@
   "tasks": [
     {
       "type": "shell",
-      "label": "C/C++: clang++ build Lab 9.1",
-      "command": "/usr/bin/clang++",
+      "label": "C/C++: clang++ build active file",
+      "command": "/bin/bash",
       "args": [
-        "-std=c++17",
-        "-g",
-        "${workspaceFolder}/9.1/Lab_09_1.cpp",
-        "${workspaceFolder}/9.1/var.cpp",
-        "${workspaceFolder}/9.1/dod.cpp",
-        "${workspaceFolder}/9.1/sum.cpp",
-        "-o",
-        "${workspaceFolder}/9.1/build/Debug/outDebug"
+        "-c",
+        "if [[ \"${fileDirname}\" =~ \"9.1\" ]]; then /usr/bin/clang++ -std=c++17 -g \"${file}\" \"${fileDirname}/var.cpp\" \"${fileDirname}/dod.cpp\" \"${fileDirname}/sum.cpp\" -o \"${fileDirname}/${fileBasenameNoExtension}\"; else /usr/bin/clang++ -std=c++17 -g \"${file}\" -o \"${fileDirname}/${fileBasenameNoExtension}\"; fi"
       ],
       "options": {
-        "cwd": "${workspaceFolder}/9.1"
+        "cwd": "${fileDirname}"
       },
       "problemMatcher": ["$gcc"],
       "group": {
         "kind": "build",
         "isDefault": true
       },
-      "detail": "Збирання багатомодульного проєкту Лабораторної 9.1"
-    },
-    {
-      "type": "shell",
-      "label": "C/C++: clang++ build Lab 9.2.1",
-      "command": "/usr/bin/clang++",
-      "args": [
-        "-std=c++17",
-        "-g",
-        "${workspaceFolder}/9.2.1/Lab_09_2_1.cpp",
-        "-o",
-        "${workspaceFolder}/9.2.1/build/Debug/outDebug"
-      ],
-      "options": {
-        "cwd": "${workspaceFolder}/9.2.1"
-      },
-      "problemMatcher": ["$gcc"],
-      "group": "build",
-      "detail": "Збирання проєкту Лабораторної 9.2.1"
+      "detail": "Збирання активного C++ файлу"
     }
   ]
 }

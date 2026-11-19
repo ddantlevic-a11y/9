@@ -2,22 +2,13 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "Run / Debug Lab 9.1",
+      "name": "Run / Debug Active File",
       "type": "lldb",
       "request": "launch",
+      "program": "${fileDirname}/${fileBasenameNoExtension}",
       "args": [],
-      "cwd": "${workspaceFolder}/9.1",
-      "program": "${workspaceFolder}/9.1/build/Debug/outDebug",
-      "preLaunchTask": "C/C++: clang++ build Lab 9.1"
-    },
-    {
-      "name": "Run / Debug Lab 9.2.1",
-      "type": "lldb",
-      "request": "launch",
-      "args": [],
-      "cwd": "${workspaceFolder}/9.2.1",
-      "program": "${workspaceFolder}/9.2.1/build/Debug/outDebug",
-      "preLaunchTask": "C/C++: clang++ build Lab 9.2.1"
+      "cwd": "${fileDirname}",
+      "preLaunchTask": "C/C++: clang++ build active file"
     },
     {
       "name": "C/C++ Runner: Debug Session",

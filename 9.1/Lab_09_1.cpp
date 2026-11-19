@@ -17,7 +17,6 @@ using namespace nsDod;
 using namespace nsSum;
 using namespace nsVar;
 
-#ifndef UNIT_TEST
 int main()
 {
     const double PI = 4.0 * atan(1.0);
@@ -52,4 +51,3 @@ int main()
     cin.get();
     return 0;
 }
-#endif
