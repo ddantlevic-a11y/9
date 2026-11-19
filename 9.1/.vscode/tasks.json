@@ -4,10 +4,13 @@
     {
       "type": "shell",
       "label": "C/C++: clang++ build active file",
-      "command": "/bin/bash",
+      "command": "/usr/bin/clang++",
       "args": [
-        "-c",
-        "if [[ \"${fileDirname}\" =~ \"9.1\" ]]; then /usr/bin/clang++ -std=c++17 -g \"${file}\" \"${fileDirname}/var.cpp\" \"${fileDirname}/dod.cpp\" \"${fileDirname}/sum.cpp\" -o \"${fileDirname}/${fileBasenameNoExtension}\"; else /usr/bin/clang++ -std=c++17 -g \"${file}\" -o \"${fileDirname}/${fileBasenameNoExtension}\"; fi"
+        "-std=c++17",
+        "-g",
+        "${file}",
+        "-o",
+        "${fileDirname}/${fileBasenameNoExtension}"
       ],
       "options": {
         "cwd": "${fileDirname}"
@@ -17,7 +20,7 @@
         "kind": "build",
         "isDefault": true
       },
-      "detail": "Збирання активного C++ файлу"
+      "detail": "Збирання активного файлу"
     }
   ]
 }
