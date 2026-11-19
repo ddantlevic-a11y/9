@@ -6,10 +6,14 @@
 #include <cassert>
 #include <cmath>
 
-using namespace std;
+#include "dod.h"
+#include "sum.h"
+#include "var.h"
 
-#define UNIT_TEST
-#include "Lab_09_1.cpp"
+using namespace std;
+using namespace nsDod;
+using namespace nsSum;
+using namespace nsVar;
 
 void TestDod()
 {
