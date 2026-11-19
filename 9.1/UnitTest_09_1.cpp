@@ -10,6 +10,10 @@
 #include "sum.h"
 #include "var.h"
 
+#include "var.cpp"
+#include "dod.cpp"
+#include "sum.cpp"
+
 using namespace std;
 using namespace nsDod;
 using namespace nsSum;
