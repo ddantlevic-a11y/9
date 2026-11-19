@@ -1,0 +1,31 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Run / Debug Lab 9.1",
+      "type": "lldb",
+      "request": "launch",
+      "args": [],
+      "cwd": "${workspaceFolder}/9.1",
+      "program": "${workspaceFolder}/9.1/build/Debug/outDebug",
+      "preLaunchTask": "C/C++: clang++ build Lab 9.1"
+    },
+    {
+      "name": "Run / Debug Lab 9.2.1",
+      "type": "lldb",
+      "request": "launch",
+      "args": [],
+      "cwd": "${workspaceFolder}/9.2.1",
+      "program": "${workspaceFolder}/9.2.1/build/Debug/outDebug",
+      "preLaunchTask": "C/C++: clang++ build Lab 9.2.1"
+    },
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "lldb",
+      "request": "launch",
+      "args": [],
+      "cwd": "/Users/danylo/Desktop/9/9.1",
+      "program": "/Users/danylo/Desktop/9/9.1/build/Debug/outDebug"
+    }
+  ]
+}

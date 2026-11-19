@@ -6,9 +6,10 @@
 #include <cassert>
 #include <cmath>
 
-#include "macros.h"
-
 using namespace std;
+
+#define UNIT_TEST
+#include "Lab_09_2_1.cpp"
 
 void TestMacros()
 {

@@ -12,6 +12,10 @@
 #include "sum.h"
 #include "var.h"
 
+#include "var.cpp"
+#include "dod.cpp"
+#include "sum.cpp"
+
 using namespace std;
 using namespace nsDod;
 using namespace nsSum;
@@ -37,7 +41,7 @@ int main()
 
     x = x_p;
     while (x <= x_k + dx / 2.0) {
-        sum(); // виклик процедури обчислення суми
+        sum();
 
         cout << "|" << setw(10) << setprecision(4) << fixed << x << " |"
              << setw(14) << setprecision(6) << fixed << (PI / 2.0 - atan(x)) << " |"
